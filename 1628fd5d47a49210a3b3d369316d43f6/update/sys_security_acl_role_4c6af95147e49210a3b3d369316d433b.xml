@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 03:17:17</sys_created_on>
+        <sys_id>4c6af95147e49210a3b3d369316d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_451641_travel_ma_travel_request.x_451641_travel_ma.travel_admin</sys_name>
+        <sys_package display_value="Travel Management" source="x_451641_travel_ma">1628fd5d47a49210a3b3d369316d43f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Management">1628fd5d47a49210a3b3d369316d43f6</sys_scope>
+        <sys_security_acl display_value="x_451641_travel_ma_travel_request">3f5af95147e49210a3b3d369316d4338</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4c6af95147e49210a3b3d369316d433b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 03:17:17</sys_updated_on>
+        <sys_user_role display_value="x_451641_travel_ma.travel_admin" name="x_451641_travel_ma.travel_admin">4ca8f5dd47a49210a3b3d369316d438e</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
