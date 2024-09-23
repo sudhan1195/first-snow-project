@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="travel_class" table="x_451641_travel_ma_travel_request">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="reason_for_travel" table="x_451641_travel_ma_travel_request">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -10,10 +10,10 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>1</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Travel Class</column_label>
+        <column_label>Justification of Travel</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,15 +26,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>travel_class</element>
+        <element>reason_for_travel</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
+        <internal_type display_value="">string_full_utf8</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>1000</max_length>
         <name>x_451641_travel_ma_travel_request</name>
         <next_element/>
         <primary>false</primary>
@@ -52,14 +52,14 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-21 15:03:35</sys_created_on>
-        <sys_id>904e4a1983b012105cd5a270ceaad3e1</sys_id>
-        <sys_name>Travel Class</sys_name>
+        <sys_id>89be8a1983b012105cd5a270ceaad34d</sys_id>
+        <sys_name>Justification of Travel</sys_name>
         <sys_package display_value="Travel Management" source="x_451641_travel_ma">1628fd5d47a49210a3b3d369316d43f6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Management">1628fd5d47a49210a3b3d369316d43f6</sys_scope>
-        <sys_update_name>sys_dictionary_x_451641_travel_ma_travel_request_travel_class</sys_update_name>
+        <sys_update_name>sys_dictionary_x_451641_travel_ma_travel_request_reason_for_travel</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-21 15:03:35</sys_updated_on>
+        <sys_updated_on>2024-09-22 15:01:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
