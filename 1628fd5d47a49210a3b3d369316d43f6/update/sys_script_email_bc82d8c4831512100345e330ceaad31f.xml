@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>test_email_script</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+
+    // Add your code here
+	var openedByUName=current.opened_by.user_name.toString();
+    template.print("<h2>Travel Request Email for:"+openedByUName+"</h2>");
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-12 05:18:28</sys_created_on>
+        <sys_id>bc82d8c4831512100345e330ceaad31f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>test_email_script</sys_name>
+        <sys_package display_value="Travel Management" source="x_451641_travel_ma">1628fd5d47a49210a3b3d369316d43f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Management">1628fd5d47a49210a3b3d369316d43f6</sys_scope>
+        <sys_update_name>sys_script_email_bc82d8c4831512100345e330ceaad31f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-12 05:25:01</sys_updated_on>
+    </sys_script_email>
+</record_update>
