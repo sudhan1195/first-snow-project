@@ -6,7 +6,7 @@ on:
     branches:
       - main
 env:
-    
+
 jobs:
   publish:
     # Purpose of this job is to demonstrate publishing an Application Customization 
