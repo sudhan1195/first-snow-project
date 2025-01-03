@@ -9,7 +9,7 @@ jobs:
   publish:
     # Purpose of this job is to demonstrate publishing an Application Customization 
     name: Publish from Dev
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: ServiceNow CI/CD Publish App
         id: publish_app
