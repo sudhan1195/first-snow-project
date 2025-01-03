@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>traveling_reason</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Visibility of Office Location </name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+	alert(newValue);
+    if (newValue == "") {
+		g_form.clearValue("office_location");
+        g_form.setVisible("office_location", false); //Visibility false: Hidden
+        return;
+    }
+    if (newValue != "") {
+		g_form.clearValue("office_location");
+        g_form.setVisible("office_location", true);
+        g_form.setMandatory("office_location", true);
+
+    }
+
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:16:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>816b13a5833c52105cd5a270ceaad30e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Set Visibility of Office Location </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Management" source="x_451641_travel_ma">1628fd5d47a49210a3b3d369316d43f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Management">1628fd5d47a49210a3b3d369316d43f6</sys_scope>
+        <sys_update_name>sys_script_client_816b13a5833c52105cd5a270ceaad30e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-23 01:55:00</sys_updated_on>
+        <table>x_451641_travel_ma_travel_request</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

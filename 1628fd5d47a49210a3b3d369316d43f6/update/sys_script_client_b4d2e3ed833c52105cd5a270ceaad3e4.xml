@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate short description is not empty</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    //Type appropriate comment here, and begin script below
+	//For validations & to check whether there is anything empty or not
+	g_form.clearMessages();
+    if (g_form.getValue("short_description") == "") {
+		g_form.addErrorMessage("Short Description should not be empty");
+        return false;
+    }
+	return true;
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:48:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b4d2e3ed833c52105cd5a270ceaad3e4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Validate short description is not empty</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Management" source="x_451641_travel_ma">1628fd5d47a49210a3b3d369316d43f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Management">1628fd5d47a49210a3b3d369316d43f6</sys_scope>
+        <sys_update_name>sys_script_client_b4d2e3ed833c52105cd5a270ceaad3e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:51:44</sys_updated_on>
+        <table>x_451641_travel_ma_travel_request</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
