@@ -5,8 +5,6 @@ on:
   push:
     branches:
       - main
-env:
-
 jobs:
   publish:
     # Purpose of this job is to demonstrate publishing an Application Customization 
@@ -22,7 +20,7 @@ jobs:
           incrementBy: 1
           isAppCustomization: true
         env:
-          nowUsername: ${{ secrets.SN_USERNAME }}
-          nowPassword: ${{ secrets.SN_PASSWORD }}
-          nowSourceInstance: ${{ secrets.SN_DEV_INSTANCE }}
-          appSysID: ${{ secrets.SN_APP_SYSID }}
+          nowUsername: admin
+          nowPassword: 7fv$B4ly$NLE
+          nowSourceInstance: https://dev213765.service-now.com/
+          appSysID: 1628fd5d47a49210a3b3d369316d43f6
