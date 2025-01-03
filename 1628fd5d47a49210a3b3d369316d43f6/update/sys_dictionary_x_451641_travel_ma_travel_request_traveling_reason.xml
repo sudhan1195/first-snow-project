@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-22 14:57:11</sys_created_on>
-        <sys_id>7f0793ed83f852105cd5a270ceaad36c</sys_id>
         <sys_name>Traveling Reason</sys_name>
         <sys_package display_value="Travel Management" source="x_451641_travel_ma">1628fd5d47a49210a3b3d369316d43f6</sys_package>
         <sys_policy/>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">93e6835bd12302104f34ba60d8b7c1f1</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-21 14:41:04</sys_created_on>
+        <sys_id>c5f90e9183b012105cd5a270ceaad3ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Travel Management" source="x_451641_travel_ma">1628fd5d47a49210a3b3d369316d43f6</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-21 14:41:04</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

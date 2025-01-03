@@ -37,4 +37,15 @@ if (gs.getUser().hasRole("x_451641_travel_ma.travel_admin")) {
         <sys_updated_on>2024-10-27 16:59:29</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>33d2c04d836112105cd5a270ceaad3a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-27 16:59:50</sys_created_on>
+        <sys_id>7cf2c04d836112105cd5a270ceaad326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-27 16:59:50</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

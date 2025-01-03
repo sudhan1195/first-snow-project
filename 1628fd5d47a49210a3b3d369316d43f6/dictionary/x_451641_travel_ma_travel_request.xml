@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="fec9869183b012105cd5a270ceaad3bd" extends="task" label="Travel Request" max_length="40" name="x_451641_travel_ma_travel_request" type="collection">
+        <element label="Where are you traveling to?" mandatory="true" max_length="32" name="where_are_you_traveling" reference="core_country" type="reference"/>
+        <element label="Where are you traveling from?" mandatory="true" max_length="32" name="where_are_you_traveling_from" reference="core_country" type="reference"/>
+        <element default="true" label="Is it an official travel request?" max_length="40" name="is_it_an_official_travel_request" type="boolean"/>
+        <element label="Expenditure Amount" max_length="20" name="expenditure_amount" type="currency"/>
+        <element choice="1" label="Traveling Reason" max_length="40" name="traveling_reason" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Meeting with Vendor/Customer at their location" value="vendor_meeting"/>
+                <element inactive_on_update="false" label="Office Meeting" value="office_meeting"/>
+            </choice>
+        </element>
+        <element label="Office Location" max_length="32" name="office_location" reference="cmn_location" reference_qual="javascript:(current.traveling_reason=='office_meeting')? &quot;u_office_location=&quot; + current.where_are_you_traveling:&quot;u_office_locationANYTHING&quot;;" type="reference" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element label="Justification of Travel" max_length="1000" name="reason_for_travel" type="string_full_utf8"/>
+        <element default="javascript:gs.getUserID()" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Opened by Manager" max_length="32" name="opened_by_manager" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element choice="1" label="Travel Class" max_length="40" name="travel_class" type="choice">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Business" sequence="0" value="business"/>
+                <element inactive="true" inactive_on_update="true" label="Economy" sequence="1" value="economy"/>
+            </choice>
+        </element>
+        <element label="Reimbursement Amount" max_length="20" name="reimbursement_amount" read_only="true" type="currency"/>
+    </element>
+</database>
