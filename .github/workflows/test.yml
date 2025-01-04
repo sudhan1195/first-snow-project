@@ -12,7 +12,7 @@ jobs:
     # the pipeline build to the Dev instance, then publish the application to 
     # app repo using the template versioning format. 
     name: Publish from Dev
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     # Below line can be used to set conditionals for modifying your pipeline as needed.
     # if: ${{ github.event_name == 'pull_request'}}
 
