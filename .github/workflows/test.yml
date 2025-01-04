@@ -1,4 +1,4 @@
-name: ServiceNow GitHub Actions Demo Run Test
+name: ServiceNow GitHub Actions Demo Run Test Final
 
 on:
   pull_request:
