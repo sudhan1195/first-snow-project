@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Print Greeting
-        run: npm install webpack/extract-text-webpack-plugin
+        run: npm install
 
       - name: ServiceNow CI/CD Apply Changes
         uses: ServiceNow/sncicd-apply-changes@2.0.0
@@ -39,7 +39,7 @@ jobs:
         env:
           nowUsername: ${{ secrets.SN_USERNAME }}
           nowPassword: ${{ secrets.SN_PASSWORD }}
-          nowSourceInstance: ${{ secrets.SN_DEV_INSTANCE }}
+          nowSourceInstance: https://atmcodev.service-now.com
           appSysID: ${{ secrets.SN_APP_SYSID }}
           
     # This is required to pass the version number output from Publish App 
