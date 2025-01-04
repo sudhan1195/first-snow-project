@@ -17,9 +17,6 @@ jobs:
     # if: ${{ github.event_name == 'pull_request'}}
 
     steps:
-      - name: Print Greeting
-        run: npm install
-
       - name: ServiceNow CI/CD Apply Changes
         uses: ServiceNow/sncicd-apply-changes@2.0.0
         env:
